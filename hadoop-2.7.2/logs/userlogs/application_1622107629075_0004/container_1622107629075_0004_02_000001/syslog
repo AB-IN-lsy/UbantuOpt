@@ -1,0 +1,5 @@
+2021-05-27 18:06:39,127 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Created MRAppMaster for application appattempt_1622107629075_0004_000002
+2021-05-27 18:06:39,322 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-05-27 18:06:39,366 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Executing with tokens:
+2021-05-27 18:06:39,366 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: 4 cluster_timestamp: 1622107629075 } attemptId: 2 } keyId: -1763106926)
+2021-05-27 18:06:39,489 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Using mapred newApiCommitter.

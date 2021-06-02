@@ -1,0 +1,41 @@
+2021-05-27 17:56:42,694 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Created MRAppMaster for application appattempt_1622107629075_0003_000001
+2021-05-27 17:56:42,896 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-05-27 17:56:42,932 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Executing with tokens:
+2021-05-27 17:56:42,932 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: 3 cluster_timestamp: 1622107629075 } attemptId: 1 } keyId: -1763106926)
+2021-05-27 17:56:43,049 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Using mapred newApiCommitter.
+2021-05-27 17:56:43,667 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter set in config null
+2021-05-27 17:56:43,709 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2021-05-27 17:56:43,714 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2021-05-27 17:56:43,736 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+2021-05-27 17:56:43,737 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+2021-05-27 17:56:43,751 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+2021-05-27 17:56:43,752 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+2021-05-27 17:56:43,753 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+2021-05-27 17:56:43,760 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+2021-05-27 17:56:43,761 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+2021-05-27 17:56:43,762 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+2021-05-27 17:56:43,802 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://DESKTOP-TSQQRSN:9000]
+2021-05-27 17:56:43,822 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://DESKTOP-TSQQRSN:9000]
+2021-05-27 17:56:43,845 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://DESKTOP-TSQQRSN:9000]
+2021-05-27 17:56:43,851 INFO [main] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Creating intermediate history logDir: [hdfs://DESKTOP-TSQQRSN:9000/tmp/hadoop-yarn/staging/history/done_intermediate] + based on conf. Should ideally be created by the JobHistoryServer: yarn.app.mapreduce.am.create-intermediate-jh-base-dir
+2021-05-27 17:56:43,873 INFO [main] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Perms after creating 493, Expected: 1023
+2021-05-27 17:56:43,873 INFO [main] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Explicitly setting permissions to : 1023, rwxrwxrwt
+2021-05-27 17:56:43,884 INFO [main] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Perms after creating 488, Expected: 504
+2021-05-27 17:56:43,884 INFO [main] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Explicitly setting permissions to : 504, rwxrwx---
+2021-05-27 17:56:43,887 INFO [main] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Emitting job history data to the timeline server is not enabled
+2021-05-27 17:56:43,935 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+2021-05-27 17:56:44,287 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2021-05-27 17:56:44,434 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2021-05-27 17:56:44,434 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MRAppMaster metrics system started
+2021-05-27 17:56:44,441 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Adding job token for job_1622107629075_0003 to jobTokenSecretManager
+2021-05-27 17:56:44,550 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Not uberizing job_1622107629075_0003 because: not enabled;
+2021-05-27 17:56:44,576 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Input size for job job_1622107629075_0003 = 53. Number of splits = 1
+2021-05-27 17:56:44,577 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Number of reduces for job job_1622107629075_0003 = 1
+2021-05-27 17:56:44,577 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1622107629075_0003Job Transitioned from NEW to INITED
+2021-05-27 17:56:44,578 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster launching normal, non-uberized, multi-container job job_1622107629075_0003.
+2021-05-27 17:56:44,610 INFO [main] org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-05-27 17:56:44,687 INFO [Socket Reader #1 for port 60164] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 60164
+2021-05-27 17:56:44,815 INFO [main] org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+2021-05-27 17:56:44,815 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-05-27 17:56:44,816 INFO [IPC Server listener on 60164] org.apache.hadoop.ipc.Server: IPC Server listener on 60164: starting
+2021-05-27 17:56:44,817 INFO [main] org.apache.hadoop.mapreduce.v2.app.client.MRClientService: Instantiated MRClientService at DESKTOP-TSQQRSN.localdomain/127.0.1.1:60164
