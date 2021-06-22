@@ -1,0 +1,10 @@
+com/lab5/operation/ListFiles.class
+com/lab5/operation/Rename.class
+com/lab5/operation/Mkdir.class
+com/lab5/operation/CopyToLocal.class
+com/lab5/operation/App.class
+com/lab5/operation/Append.class
+com/lab5/operation/Ls.class
+com/lab5/operation/CopyFromLocal.class
+com/lab5/operation/Touch.class
+com/lab5/operation/Delete.class

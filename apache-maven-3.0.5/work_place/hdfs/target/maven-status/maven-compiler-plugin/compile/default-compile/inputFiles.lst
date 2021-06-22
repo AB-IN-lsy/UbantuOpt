@@ -1,0 +1,10 @@
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/CopyToLocal.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/Touch.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/Rename.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/ListFiles.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/Ls.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/Append.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/Mkdir.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/App.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/CopyFromLocal.java
+/opt/apache-maven-3.0.5/work_place/hdfs/src/main/java/com/lab5/operation/Delete.java

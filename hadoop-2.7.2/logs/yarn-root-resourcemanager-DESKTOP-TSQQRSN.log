@@ -9878,3 +9878,824 @@ preemptionDisabled = true
 /************************************************************
 SHUTDOWN_MSG: Shutting down ResourceManager at DESKTOP-TSQQRSN/10.191.53.85
 ************************************************************/
+2021-06-20 21:01:26,218 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting ResourceManager
+STARTUP_MSG:   host = DESKTOP-TSQQRSN/10.191.53.85
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/etc/hadoop/rm-config/log4j.properties
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_144
+************************************************************/
+2021-06-20 21:01:26,298 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2021-06-20 21:01:26,681 INFO org.apache.hadoop.conf.Configuration: found resource core-site.xml at file:/opt/hadoop-2.7.2/etc/hadoop/core-site.xml
+2021-06-20 21:01:26,767 INFO org.apache.hadoop.security.Groups: clearing userToGroupsMap cache
+2021-06-20 21:01:26,889 INFO org.apache.hadoop.conf.Configuration: found resource yarn-site.xml at file:/opt/hadoop-2.7.2/etc/hadoop/yarn-site.xml
+2021-06-20 21:01:27,091 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2021-06-20 21:01:27,304 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2021-06-20 21:01:27,313 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2021-06-20 21:01:27,321 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2021-06-20 21:01:27,382 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2021-06-20 21:01:27,385 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2021-06-20 21:01:27,385 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2021-06-20 21:01:27,427 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2021-06-20 21:01:27,428 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2021-06-20 21:01:27,430 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2021-06-20 21:01:27,432 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2021-06-20 21:01:27,524 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2021-06-20 21:01:27,590 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2021-06-20 21:01:27,590 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2021-06-20 21:01:27,617 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2021-06-20 21:01:27,631 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2021-06-20 21:01:27,634 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2021-06-20 21:01:27,638 INFO org.apache.hadoop.yarn.security.YarnAuthorizationProvider: org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instiantiated.
+2021-06-20 21:01:27,653 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2021-06-20 21:01:27,656 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/opt/hadoop-2.7.2/etc/hadoop/capacity-scheduler.xml
+2021-06-20 21:01:27,730 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root is undefined
+2021-06-20 21:01:27,730 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root is undefined
+2021-06-20 21:01:27,735 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APP:*ADMINISTER_QUEUE:*, labels=*,
+, reservationsContinueLooking=true
+2021-06-20 21:01:27,735 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2021-06-20 21:01:27,744 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root.default is undefined
+2021-06-20 21:01:27,745 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root.default is undefined
+2021-06-20 21:01:27,746 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+capacity = 1.0 [= (float) configuredCapacity / 100 ]
+asboluteCapacity = 1.0 [= parentAbsoluteCapacity * capacity ]
+maxCapacity = 1.0 [= configuredMaxCapacity ]
+absoluteMaxCapacity = 1.0 [= 1.0 maximumCapacity undefined, (parentAbsoluteMaxCapacity * maximumCapacity) / 100 otherwise ]
+userLimit = 100 [= configuredUserLimit ]
+userLimitFactor = 1.0 [= configuredUserLimitFactor ]
+maxApplications = 10000 [= configuredMaximumSystemApplicationsPerQueue or (int)(configuredMaximumSystemApplications * absoluteCapacity)]
+maxApplicationsPerUser = 10000 [= (int)(maxApplications * (userLimit / 100.0f) * userLimitFactor) ]
+usedCapacity = 0.0 [= usedResourcesMemory / (clusterResourceMemory * absoluteCapacity)]
+absoluteUsedCapacity = 0.0 [= usedResourcesMemory / clusterResourceMemory]
+maxAMResourcePerQueuePercent = 0.1 [= configuredMaximumAMResourcePercent ]
+minimumAllocationFactor = 0.875 [= (float)(maximumAllocationMemory - minimumAllocationMemory) / maximumAllocationMemory ]
+maximumAllocation = <memory:8192, vCores:32> [= configuredMaxAllocation ]
+numContainers = 0 [= currentNumContainers ]
+state = RUNNING [= configuredState ]
+acls = SUBMIT_APP:*ADMINISTER_QUEUE:* [= configuredAcls ]
+nodeLocalityDelay = 40
+labels=*,
+nodeLocalityDelay = 40
+reservationsContinueLooking = true
+preemptionDisabled = true
+
+2021-06-20 21:01:27,746 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2021-06-20 21:01:27,746 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-20 21:01:27,747 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-20 21:01:27,747 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2021-06-20 21:01:27,748 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2021-06-20 21:01:27,773 INFO org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher: YARN system metrics publishing service is not enabled
+2021-06-20 21:01:27,773 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to active state
+2021-06-20 21:01:27,793 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Updating AMRMToken
+2021-06-20 21:01:27,793 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: Rolling master-key for container-tokens
+2021-06-20 21:01:27,794 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Rolling master-key for nm-tokens
+2021-06-20 21:01:27,794 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-20 21:01:27,795 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 1
+2021-06-20 21:01:27,795 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2021-06-20 21:01:27,797 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2021-06-20 21:01:27,797 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-20 21:01:27,797 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 2
+2021-06-20 21:01:27,797 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2021-06-20 21:01:27,800 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.nodelabels.event.NodeLabelsStoreEventType for class org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager$ForwardingEventHandler
+2021-06-20 21:01:27,839 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-20 21:01:27,854 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8031
+2021-06-20 21:01:27,879 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceTrackerPB to the server
+2021-06-20 21:01:27,880 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-20 21:01:27,880 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8031: starting
+2021-06-20 21:01:27,932 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-20 21:01:27,938 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8030
+2021-06-20 21:01:27,946 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationMasterProtocolPB to the server
+2021-06-20 21:01:27,946 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-20 21:01:27,946 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8030: starting
+2021-06-20 21:01:28,051 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-20 21:01:28,052 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8032
+2021-06-20 21:01:28,053 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationClientProtocolPB to the server
+2021-06-20 21:01:28,054 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-20 21:01:28,054 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8032: starting
+2021-06-20 21:01:28,063 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to active state
+2021-06-20 21:01:28,182 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2021-06-20 21:01:28,190 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2021-06-20 21:01:28,197 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.resourcemanager is not defined
+2021-06-20 21:01:28,207 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2021-06-20 21:01:28,211 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context cluster
+2021-06-20 21:01:28,211 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context static
+2021-06-20 21:01:28,211 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context logs
+2021-06-20 21:01:28,212 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context cluster
+2021-06-20 21:01:28,212 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2021-06-20 21:01:28,212 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2021-06-20 21:01:28,216 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /cluster/*
+2021-06-20 21:01:28,216 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2021-06-20 21:01:29,430 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2021-06-20 21:01:29,437 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8088
+2021-06-20 21:01:29,438 INFO org.mortbay.log: jetty-6.1.26
+2021-06-20 21:01:29,495 INFO org.mortbay.log: Extract jar:file:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar!/webapps/cluster to /tmp/Jetty_0_0_0_0_8088_cluster____u0rgz3/webapp
+2021-06-20 21:01:29,785 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-20 21:01:29,786 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2021-06-20 21:01:29,787 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-20 21:01:32,395 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2021-06-20 21:01:32,395 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app cluster started at 8088
+2021-06-20 21:01:32,494 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-20 21:01:32,495 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8033
+2021-06-20 21:01:32,500 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceManagerAdministrationProtocolPB to the server
+2021-06-20 21:01:32,502 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-20 21:01:32,502 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8033: starting
+2021-06-20 21:01:34,909 INFO org.apache.hadoop.yarn.util.RackResolver: Resolved DESKTOP-TSQQRSN to /default-rack
+2021-06-20 21:01:34,913 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService: NodeManager from node DESKTOP-TSQQRSN(cmPort: 59798 httpPort: 8042) registered with capability: <memory:8192, vCores:8>, assigned nodeId DESKTOP-TSQQRSN:59798
+2021-06-20 21:01:34,917 INFO org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl: DESKTOP-TSQQRSN:59798 Node Transitioned from NEW to RUNNING
+2021-06-20 21:01:34,922 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Added node DESKTOP-TSQQRSN:59798 clusterResource: <memory:8192, vCores:8>
+2021-06-20 21:11:27,661 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.AbstractYarnScheduler: Release request cache is cleaned up
+2021-06-20 21:44:41,800 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM
+2021-06-20 21:44:41,820 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2021-06-20 21:44:41,824 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2021-06-20 21:44:41,941 INFO org.apache.hadoop.ipc.Server: Stopping server on 8032
+2021-06-20 21:44:41,943 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-20 21:44:41,944 INFO org.apache.hadoop.ipc.Server: Stopping server on 8033
+2021-06-20 21:44:41,946 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8032
+2021-06-20 21:44:41,949 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8033
+2021-06-20 21:44:41,951 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-20 21:44:41,954 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to standby state
+2021-06-20 21:44:41,956 WARN org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher: org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher$LauncherThread interrupted. Returning.
+2021-06-20 21:44:41,956 INFO org.apache.hadoop.ipc.Server: Stopping server on 8030
+2021-06-20 21:44:41,960 INFO org.apache.hadoop.ipc.Server: Stopping server on 8031
+2021-06-20 21:44:41,960 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-20 21:44:41,961 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8030
+2021-06-20 21:44:41,962 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8031
+2021-06-20 21:44:41,962 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-20 21:44:41,962 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Returning, interrupted : java.lang.InterruptedException
+2021-06-20 21:44:41,962 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2021-06-20 21:44:41,967 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: NMLivelinessMonitor thread interrupted
+2021-06-20 21:44:41,970 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer thread interrupted
+2021-06-20 21:44:41,970 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2021-06-20 21:44:41,970 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2021-06-20 21:44:41,970 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2021-06-20 21:44:41,973 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping ResourceManager metrics system...
+2021-06-20 21:44:41,976 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system stopped.
+2021-06-20 21:44:41,977 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system shutdown complete.
+2021-06-20 21:44:41,977 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2021-06-20 21:44:41,977 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to standby state
+2021-06-20 21:44:41,978 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down ResourceManager at DESKTOP-TSQQRSN/10.191.53.85
+************************************************************/
+2021-06-21 18:40:48,785 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting ResourceManager
+STARTUP_MSG:   host = DESKTOP-TSQQRSN/10.191.53.85
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/etc/hadoop/rm-config/log4j.properties
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_144
+************************************************************/
+2021-06-21 18:40:48,812 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2021-06-21 18:40:49,155 INFO org.apache.hadoop.conf.Configuration: found resource core-site.xml at file:/opt/hadoop-2.7.2/etc/hadoop/core-site.xml
+2021-06-21 18:40:49,239 INFO org.apache.hadoop.security.Groups: clearing userToGroupsMap cache
+2021-06-21 18:40:49,340 INFO org.apache.hadoop.conf.Configuration: found resource yarn-site.xml at file:/opt/hadoop-2.7.2/etc/hadoop/yarn-site.xml
+2021-06-21 18:40:49,534 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2021-06-21 18:40:50,050 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2021-06-21 18:40:50,059 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2021-06-21 18:40:50,068 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2021-06-21 18:40:50,140 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2021-06-21 18:40:50,143 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2021-06-21 18:40:50,143 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2021-06-21 18:40:50,182 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2021-06-21 18:40:50,183 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2021-06-21 18:40:50,184 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2021-06-21 18:40:50,186 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2021-06-21 18:40:50,303 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2021-06-21 18:40:50,365 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2021-06-21 18:40:50,365 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2021-06-21 18:40:50,381 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2021-06-21 18:40:50,391 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2021-06-21 18:40:50,394 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2021-06-21 18:40:50,397 INFO org.apache.hadoop.yarn.security.YarnAuthorizationProvider: org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instiantiated.
+2021-06-21 18:40:50,399 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2021-06-21 18:40:50,412 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/opt/hadoop-2.7.2/etc/hadoop/capacity-scheduler.xml
+2021-06-21 18:40:50,471 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root is undefined
+2021-06-21 18:40:50,471 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root is undefined
+2021-06-21 18:40:50,476 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APP:*ADMINISTER_QUEUE:*, labels=*,
+, reservationsContinueLooking=true
+2021-06-21 18:40:50,476 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2021-06-21 18:40:50,488 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root.default is undefined
+2021-06-21 18:40:50,488 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root.default is undefined
+2021-06-21 18:40:50,489 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+capacity = 1.0 [= (float) configuredCapacity / 100 ]
+asboluteCapacity = 1.0 [= parentAbsoluteCapacity * capacity ]
+maxCapacity = 1.0 [= configuredMaxCapacity ]
+absoluteMaxCapacity = 1.0 [= 1.0 maximumCapacity undefined, (parentAbsoluteMaxCapacity * maximumCapacity) / 100 otherwise ]
+userLimit = 100 [= configuredUserLimit ]
+userLimitFactor = 1.0 [= configuredUserLimitFactor ]
+maxApplications = 10000 [= configuredMaximumSystemApplicationsPerQueue or (int)(configuredMaximumSystemApplications * absoluteCapacity)]
+maxApplicationsPerUser = 10000 [= (int)(maxApplications * (userLimit / 100.0f) * userLimitFactor) ]
+usedCapacity = 0.0 [= usedResourcesMemory / (clusterResourceMemory * absoluteCapacity)]
+absoluteUsedCapacity = 0.0 [= usedResourcesMemory / clusterResourceMemory]
+maxAMResourcePerQueuePercent = 0.1 [= configuredMaximumAMResourcePercent ]
+minimumAllocationFactor = 0.875 [= (float)(maximumAllocationMemory - minimumAllocationMemory) / maximumAllocationMemory ]
+maximumAllocation = <memory:8192, vCores:32> [= configuredMaxAllocation ]
+numContainers = 0 [= currentNumContainers ]
+state = RUNNING [= configuredState ]
+acls = SUBMIT_APP:*ADMINISTER_QUEUE:* [= configuredAcls ]
+nodeLocalityDelay = 40
+labels=*,
+nodeLocalityDelay = 40
+reservationsContinueLooking = true
+preemptionDisabled = true
+
+2021-06-21 18:40:50,489 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2021-06-21 18:40:50,490 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-21 18:40:50,491 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-21 18:40:50,491 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2021-06-21 18:40:50,491 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2021-06-21 18:40:50,506 INFO org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher: YARN system metrics publishing service is not enabled
+2021-06-21 18:40:50,506 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to active state
+2021-06-21 18:40:50,530 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Updating AMRMToken
+2021-06-21 18:40:50,530 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: Rolling master-key for container-tokens
+2021-06-21 18:40:50,530 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Rolling master-key for nm-tokens
+2021-06-21 18:40:50,530 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-21 18:40:50,531 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 1
+2021-06-21 18:40:50,531 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2021-06-21 18:40:50,533 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2021-06-21 18:40:50,533 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-21 18:40:50,533 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 2
+2021-06-21 18:40:50,534 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2021-06-21 18:40:50,536 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.nodelabels.event.NodeLabelsStoreEventType for class org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager$ForwardingEventHandler
+2021-06-21 18:40:50,570 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-21 18:40:50,583 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8031
+2021-06-21 18:40:50,599 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceTrackerPB to the server
+2021-06-21 18:40:50,600 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-21 18:40:50,600 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8031: starting
+2021-06-21 18:40:50,642 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-21 18:40:50,648 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8030
+2021-06-21 18:40:50,655 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationMasterProtocolPB to the server
+2021-06-21 18:40:50,655 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-21 18:40:50,655 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8030: starting
+2021-06-21 18:40:50,754 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-21 18:40:50,755 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8032
+2021-06-21 18:40:50,757 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationClientProtocolPB to the server
+2021-06-21 18:40:50,758 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-21 18:40:50,758 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8032: starting
+2021-06-21 18:40:50,771 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to active state
+2021-06-21 18:40:50,881 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2021-06-21 18:40:50,890 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2021-06-21 18:40:50,895 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.resourcemanager is not defined
+2021-06-21 18:40:50,903 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2021-06-21 18:40:50,910 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context cluster
+2021-06-21 18:40:50,911 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context static
+2021-06-21 18:40:50,911 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context logs
+2021-06-21 18:40:50,911 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context cluster
+2021-06-21 18:40:50,911 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2021-06-21 18:40:50,911 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2021-06-21 18:40:50,915 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /cluster/*
+2021-06-21 18:40:50,915 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2021-06-21 18:40:51,713 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2021-06-21 18:40:51,716 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8088
+2021-06-21 18:40:51,716 INFO org.mortbay.log: jetty-6.1.26
+2021-06-21 18:40:51,755 INFO org.mortbay.log: Extract jar:file:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar!/webapps/cluster to /tmp/Jetty_0_0_0_0_8088_cluster____u0rgz3/webapp
+2021-06-21 18:40:51,996 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-21 18:40:51,997 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2021-06-21 18:40:51,997 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-21 18:40:53,780 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2021-06-21 18:40:53,781 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app cluster started at 8088
+2021-06-21 18:40:53,926 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-21 18:40:53,928 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8033
+2021-06-21 18:40:53,930 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceManagerAdministrationProtocolPB to the server
+2021-06-21 18:40:53,931 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-21 18:40:53,931 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8033: starting
+2021-06-21 18:40:56,124 INFO org.apache.hadoop.yarn.util.RackResolver: Resolved DESKTOP-TSQQRSN to /default-rack
+2021-06-21 18:40:56,128 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService: NodeManager from node DESKTOP-TSQQRSN(cmPort: 63142 httpPort: 8042) registered with capability: <memory:8192, vCores:8>, assigned nodeId DESKTOP-TSQQRSN:63142
+2021-06-21 18:40:56,131 INFO org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl: DESKTOP-TSQQRSN:63142 Node Transitioned from NEW to RUNNING
+2021-06-21 18:40:56,136 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Added node DESKTOP-TSQQRSN:63142 clusterResource: <memory:8192, vCores:8>
+2021-06-21 18:50:50,421 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.AbstractYarnScheduler: Release request cache is cleaned up
+2021-06-21 21:38:41,354 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM
+2021-06-21 21:38:41,390 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2021-06-21 21:38:41,397 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2021-06-21 21:38:41,506 INFO org.apache.hadoop.ipc.Server: Stopping server on 8032
+2021-06-21 21:38:41,507 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8032
+2021-06-21 21:38:41,508 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-21 21:38:41,508 INFO org.apache.hadoop.ipc.Server: Stopping server on 8033
+2021-06-21 21:38:41,513 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-21 21:38:41,514 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8033
+2021-06-21 21:38:41,513 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to standby state
+2021-06-21 21:38:41,514 WARN org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher: org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher$LauncherThread interrupted. Returning.
+2021-06-21 21:38:41,515 INFO org.apache.hadoop.ipc.Server: Stopping server on 8030
+2021-06-21 21:38:41,517 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8030
+2021-06-21 21:38:41,517 INFO org.apache.hadoop.ipc.Server: Stopping server on 8031
+2021-06-21 21:38:41,517 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-21 21:38:41,518 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8031
+2021-06-21 21:38:41,518 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-21 21:38:41,518 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Returning, interrupted : java.lang.InterruptedException
+2021-06-21 21:38:41,519 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2021-06-21 21:38:41,521 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: NMLivelinessMonitor thread interrupted
+2021-06-21 21:38:41,521 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2021-06-21 21:38:41,522 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2021-06-21 21:38:41,522 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2021-06-21 21:38:41,525 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer thread interrupted
+2021-06-21 21:38:41,525 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping ResourceManager metrics system...
+2021-06-21 21:38:41,529 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system stopped.
+2021-06-21 21:38:41,529 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system shutdown complete.
+2021-06-21 21:38:41,529 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2021-06-21 21:38:41,530 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to standby state
+2021-06-21 21:38:41,530 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down ResourceManager at DESKTOP-TSQQRSN/10.191.53.85
+************************************************************/
+2021-06-22 10:59:57,842 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting ResourceManager
+STARTUP_MSG:   host = DESKTOP-TSQQRSN/10.191.53.85
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/etc/hadoop/rm-config/log4j.properties
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_144
+************************************************************/
+2021-06-22 10:59:57,857 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2021-06-22 10:59:58,244 INFO org.apache.hadoop.conf.Configuration: found resource core-site.xml at file:/opt/hadoop-2.7.2/etc/hadoop/core-site.xml
+2021-06-22 10:59:58,329 INFO org.apache.hadoop.security.Groups: clearing userToGroupsMap cache
+2021-06-22 10:59:58,503 INFO org.apache.hadoop.conf.Configuration: found resource yarn-site.xml at file:/opt/hadoop-2.7.2/etc/hadoop/yarn-site.xml
+2021-06-22 10:59:58,714 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2021-06-22 10:59:58,917 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2021-06-22 10:59:58,923 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2021-06-22 10:59:58,929 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2021-06-22 10:59:59,036 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2021-06-22 10:59:59,039 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2021-06-22 10:59:59,039 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2021-06-22 10:59:59,069 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2021-06-22 10:59:59,070 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2021-06-22 10:59:59,072 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2021-06-22 10:59:59,074 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2021-06-22 10:59:59,237 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2021-06-22 10:59:59,303 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2021-06-22 10:59:59,303 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2021-06-22 10:59:59,320 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2021-06-22 10:59:59,331 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2021-06-22 10:59:59,351 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2021-06-22 10:59:59,355 INFO org.apache.hadoop.yarn.security.YarnAuthorizationProvider: org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instiantiated.
+2021-06-22 10:59:59,368 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2021-06-22 10:59:59,395 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/opt/hadoop-2.7.2/etc/hadoop/capacity-scheduler.xml
+2021-06-22 10:59:59,480 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root is undefined
+2021-06-22 10:59:59,480 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root is undefined
+2021-06-22 10:59:59,484 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APP:*ADMINISTER_QUEUE:*, labels=*,
+, reservationsContinueLooking=true
+2021-06-22 10:59:59,484 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2021-06-22 10:59:59,492 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root.default is undefined
+2021-06-22 10:59:59,492 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root.default is undefined
+2021-06-22 10:59:59,493 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+capacity = 1.0 [= (float) configuredCapacity / 100 ]
+asboluteCapacity = 1.0 [= parentAbsoluteCapacity * capacity ]
+maxCapacity = 1.0 [= configuredMaxCapacity ]
+absoluteMaxCapacity = 1.0 [= 1.0 maximumCapacity undefined, (parentAbsoluteMaxCapacity * maximumCapacity) / 100 otherwise ]
+userLimit = 100 [= configuredUserLimit ]
+userLimitFactor = 1.0 [= configuredUserLimitFactor ]
+maxApplications = 10000 [= configuredMaximumSystemApplicationsPerQueue or (int)(configuredMaximumSystemApplications * absoluteCapacity)]
+maxApplicationsPerUser = 10000 [= (int)(maxApplications * (userLimit / 100.0f) * userLimitFactor) ]
+usedCapacity = 0.0 [= usedResourcesMemory / (clusterResourceMemory * absoluteCapacity)]
+absoluteUsedCapacity = 0.0 [= usedResourcesMemory / clusterResourceMemory]
+maxAMResourcePerQueuePercent = 0.1 [= configuredMaximumAMResourcePercent ]
+minimumAllocationFactor = 0.875 [= (float)(maximumAllocationMemory - minimumAllocationMemory) / maximumAllocationMemory ]
+maximumAllocation = <memory:8192, vCores:32> [= configuredMaxAllocation ]
+numContainers = 0 [= currentNumContainers ]
+state = RUNNING [= configuredState ]
+acls = SUBMIT_APP:*ADMINISTER_QUEUE:* [= configuredAcls ]
+nodeLocalityDelay = 40
+labels=*,
+nodeLocalityDelay = 40
+reservationsContinueLooking = true
+preemptionDisabled = true
+
+2021-06-22 10:59:59,493 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 10:59:59,493 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 10:59:59,494 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 10:59:59,495 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2021-06-22 10:59:59,495 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2021-06-22 10:59:59,509 INFO org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher: YARN system metrics publishing service is not enabled
+2021-06-22 10:59:59,509 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to active state
+2021-06-22 10:59:59,528 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Updating AMRMToken
+2021-06-22 10:59:59,528 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: Rolling master-key for container-tokens
+2021-06-22 10:59:59,529 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Rolling master-key for nm-tokens
+2021-06-22 10:59:59,529 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-22 10:59:59,529 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 1
+2021-06-22 10:59:59,529 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2021-06-22 10:59:59,531 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2021-06-22 10:59:59,531 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-22 10:59:59,531 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 2
+2021-06-22 10:59:59,531 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2021-06-22 10:59:59,533 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.nodelabels.event.NodeLabelsStoreEventType for class org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager$ForwardingEventHandler
+2021-06-22 10:59:59,569 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-22 10:59:59,580 INFO org.apache.hadoop.service.AbstractService: Service org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService failed in state STARTED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.getServer(RpcServerFactoryPBImpl.java:139)
+	at org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC.getServer(HadoopYarnProtoRPC.java:65)
+	at org.apache.hadoop.yarn.ipc.YarnRPC.getServer(YarnRPC.java:54)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.serviceStart(ResourceTrackerService.java:162)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:120)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMActiveServices.serviceStart(ResourceManager.java:579)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.startActiveServices(ResourceManager.java:964)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$1.run(ResourceManager.java:1005)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$1.run(ResourceManager.java:1001)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.transitionToActive(ResourceManager.java:1001)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceStart(ResourceManager.java:1041)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.main(ResourceManager.java:1178)
+Caused by: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:792)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:721)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:425)
+	at org.apache.hadoop.ipc.Server$Listener.<init>(Server.java:574)
+	at org.apache.hadoop.ipc.Server.<init>(Server.java:2215)
+	at org.apache.hadoop.ipc.RPC$Server.<init>(RPC.java:938)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server.<init>(ProtobufRpcEngine.java:534)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine.getServer(ProtobufRpcEngine.java:509)
+	at org.apache.hadoop.ipc.RPC$Builder.build(RPC.java:783)
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.createServer(RpcServerFactoryPBImpl.java:169)
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.getServer(RpcServerFactoryPBImpl.java:132)
+	... 17 more
+Caused by: java.net.BindException: Cannot assign requested address
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:408)
+	... 25 more
+2021-06-22 10:59:59,614 INFO org.apache.hadoop.service.AbstractService: Service RMActiveServices failed in state STARTED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.getServer(RpcServerFactoryPBImpl.java:139)
+	at org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC.getServer(HadoopYarnProtoRPC.java:65)
+	at org.apache.hadoop.yarn.ipc.YarnRPC.getServer(YarnRPC.java:54)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.serviceStart(ResourceTrackerService.java:162)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:120)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMActiveServices.serviceStart(ResourceManager.java:579)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.startActiveServices(ResourceManager.java:964)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$1.run(ResourceManager.java:1005)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$1.run(ResourceManager.java:1001)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.transitionToActive(ResourceManager.java:1001)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceStart(ResourceManager.java:1041)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.main(ResourceManager.java:1178)
+Caused by: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:792)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:721)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:425)
+	at org.apache.hadoop.ipc.Server$Listener.<init>(Server.java:574)
+	at org.apache.hadoop.ipc.Server.<init>(Server.java:2215)
+	at org.apache.hadoop.ipc.RPC$Server.<init>(RPC.java:938)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server.<init>(ProtobufRpcEngine.java:534)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine.getServer(ProtobufRpcEngine.java:509)
+	at org.apache.hadoop.ipc.RPC$Builder.build(RPC.java:783)
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.createServer(RpcServerFactoryPBImpl.java:169)
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.getServer(RpcServerFactoryPBImpl.java:132)
+	... 17 more
+Caused by: java.net.BindException: Cannot assign requested address
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:408)
+	... 25 more
+2021-06-22 10:59:59,615 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: NMLivelinessMonitor thread interrupted
+2021-06-22 10:59:59,615 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Returning, interrupted : java.lang.InterruptedException
+2021-06-22 10:59:59,615 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2021-06-22 10:59:59,615 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2021-06-22 10:59:59,615 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer thread interrupted
+2021-06-22 10:59:59,615 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2021-06-22 10:59:59,615 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2021-06-22 10:59:59,616 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping ResourceManager metrics system...
+2021-06-22 10:59:59,616 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system stopped.
+2021-06-22 10:59:59,617 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system shutdown complete.
+2021-06-22 10:59:59,617 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2021-06-22 10:59:59,617 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2021-06-22 10:59:59,618 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2021-06-22 10:59:59,619 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2021-06-22 10:59:59,619 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2021-06-22 10:59:59,619 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2021-06-22 10:59:59,619 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2021-06-22 10:59:59,619 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2021-06-22 10:59:59,620 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2021-06-22 10:59:59,620 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2021-06-22 10:59:59,620 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2021-06-22 10:59:59,620 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2021-06-22 10:59:59,622 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2021-06-22 10:59:59,623 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2021-06-22 10:59:59,623 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2021-06-22 10:59:59,623 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2021-06-22 10:59:59,624 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2021-06-22 10:59:59,624 WARN org.apache.hadoop.metrics2.util.MBeans: Failed to register MBean "Hadoop:service=ResourceManager,name=RMNMInfo": Instance already exists.
+2021-06-22 10:59:59,624 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2021-06-22 10:59:59,624 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2021-06-22 10:59:59,625 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/opt/hadoop-2.7.2/etc/hadoop/capacity-scheduler.xml
+2021-06-22 10:59:59,651 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root is undefined
+2021-06-22 10:59:59,651 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root is undefined
+2021-06-22 10:59:59,651 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APP:*ADMINISTER_QUEUE:*, labels=*,
+, reservationsContinueLooking=true
+2021-06-22 10:59:59,652 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2021-06-22 10:59:59,653 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root.default is undefined
+2021-06-22 10:59:59,653 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root.default is undefined
+2021-06-22 10:59:59,654 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+capacity = 1.0 [= (float) configuredCapacity / 100 ]
+asboluteCapacity = 1.0 [= parentAbsoluteCapacity * capacity ]
+maxCapacity = 1.0 [= configuredMaxCapacity ]
+absoluteMaxCapacity = 1.0 [= 1.0 maximumCapacity undefined, (parentAbsoluteMaxCapacity * maximumCapacity) / 100 otherwise ]
+userLimit = 100 [= configuredUserLimit ]
+userLimitFactor = 1.0 [= configuredUserLimitFactor ]
+maxApplications = 10000 [= configuredMaximumSystemApplicationsPerQueue or (int)(configuredMaximumSystemApplications * absoluteCapacity)]
+maxApplicationsPerUser = 10000 [= (int)(maxApplications * (userLimit / 100.0f) * userLimitFactor) ]
+usedCapacity = 0.0 [= usedResourcesMemory / (clusterResourceMemory * absoluteCapacity)]
+absoluteUsedCapacity = 0.0 [= usedResourcesMemory / clusterResourceMemory]
+maxAMResourcePerQueuePercent = 0.1 [= configuredMaximumAMResourcePercent ]
+minimumAllocationFactor = 0.875 [= (float)(maximumAllocationMemory - minimumAllocationMemory) / maximumAllocationMemory ]
+maximumAllocation = <memory:8192, vCores:32> [= configuredMaxAllocation ]
+numContainers = 0 [= currentNumContainers ]
+state = RUNNING [= configuredState ]
+acls = SUBMIT_APP:*ADMINISTER_QUEUE:* [= configuredAcls ]
+nodeLocalityDelay = 40
+labels=*,
+nodeLocalityDelay = 40
+reservationsContinueLooking = true
+preemptionDisabled = true
+
+2021-06-22 10:59:59,654 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 10:59:59,654 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 10:59:59,654 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 10:59:59,654 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2021-06-22 10:59:59,654 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2021-06-22 10:59:59,655 INFO org.apache.hadoop.service.AbstractService: Service ResourceManager failed in state STARTED; cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.getServer(RpcServerFactoryPBImpl.java:139)
+	at org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC.getServer(HadoopYarnProtoRPC.java:65)
+	at org.apache.hadoop.yarn.ipc.YarnRPC.getServer(YarnRPC.java:54)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.serviceStart(ResourceTrackerService.java:162)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:120)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMActiveServices.serviceStart(ResourceManager.java:579)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.startActiveServices(ResourceManager.java:964)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$1.run(ResourceManager.java:1005)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$1.run(ResourceManager.java:1001)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.transitionToActive(ResourceManager.java:1001)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceStart(ResourceManager.java:1041)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.main(ResourceManager.java:1178)
+Caused by: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:792)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:721)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:425)
+	at org.apache.hadoop.ipc.Server$Listener.<init>(Server.java:574)
+	at org.apache.hadoop.ipc.Server.<init>(Server.java:2215)
+	at org.apache.hadoop.ipc.RPC$Server.<init>(RPC.java:938)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server.<init>(ProtobufRpcEngine.java:534)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine.getServer(ProtobufRpcEngine.java:509)
+	at org.apache.hadoop.ipc.RPC$Builder.build(RPC.java:783)
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.createServer(RpcServerFactoryPBImpl.java:169)
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.getServer(RpcServerFactoryPBImpl.java:132)
+	... 17 more
+Caused by: java.net.BindException: Cannot assign requested address
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:408)
+	... 25 more
+2021-06-22 10:59:59,656 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to standby state
+2021-06-22 10:59:59,656 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to standby state
+2021-06-22 10:59:59,656 FATAL org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Error starting ResourceManager
+org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.getServer(RpcServerFactoryPBImpl.java:139)
+	at org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC.getServer(HadoopYarnProtoRPC.java:65)
+	at org.apache.hadoop.yarn.ipc.YarnRPC.getServer(YarnRPC.java:54)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService.serviceStart(ResourceTrackerService.java:162)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.service.CompositeService.serviceStart(CompositeService.java:120)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMActiveServices.serviceStart(ResourceManager.java:579)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.startActiveServices(ResourceManager.java:964)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$1.run(ResourceManager.java:1005)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$1.run(ResourceManager.java:1001)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.transitionToActive(ResourceManager.java:1001)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.serviceStart(ResourceManager.java:1041)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.yarn.server.resourcemanager.ResourceManager.main(ResourceManager.java:1178)
+Caused by: java.net.BindException: Problem binding to [DESKTOP-TSQQRSN:8031] java.net.BindException: Cannot assign requested address; For more details see:  http://wiki.apache.org/hadoop/BindException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:792)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:721)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:425)
+	at org.apache.hadoop.ipc.Server$Listener.<init>(Server.java:574)
+	at org.apache.hadoop.ipc.Server.<init>(Server.java:2215)
+	at org.apache.hadoop.ipc.RPC$Server.<init>(RPC.java:938)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server.<init>(ProtobufRpcEngine.java:534)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine.getServer(ProtobufRpcEngine.java:509)
+	at org.apache.hadoop.ipc.RPC$Builder.build(RPC.java:783)
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.createServer(RpcServerFactoryPBImpl.java:169)
+	at org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl.getServer(RpcServerFactoryPBImpl.java:132)
+	... 17 more
+Caused by: java.net.BindException: Cannot assign requested address
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.hadoop.ipc.Server.bind(Server.java:408)
+	... 25 more
+2021-06-22 10:59:59,658 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down ResourceManager at DESKTOP-TSQQRSN/10.191.53.85
+************************************************************/
+2021-06-22 11:02:55,538 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting ResourceManager
+STARTUP_MSG:   host = DESKTOP-TSQQRSN/10.191.53.85
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/contrib/capacity-scheduler/*.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/etc/hadoop/rm-config/log4j.properties
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_144
+************************************************************/
+2021-06-22 11:02:55,547 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers for [TERM, HUP, INT]
+2021-06-22 11:02:55,891 INFO org.apache.hadoop.conf.Configuration: found resource core-site.xml at file:/opt/hadoop-2.7.2/etc/hadoop/core-site.xml
+2021-06-22 11:02:55,963 INFO org.apache.hadoop.security.Groups: clearing userToGroupsMap cache
+2021-06-22 11:02:56,038 INFO org.apache.hadoop.conf.Configuration: found resource yarn-site.xml at file:/opt/hadoop-2.7.2/etc/hadoop/yarn-site.xml
+2021-06-22 11:02:56,220 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMFatalEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$RMFatalEventDispatcher
+2021-06-22 11:02:56,407 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: NMTokenKeyRollingInterval: 86400000ms and NMTokenKeyActivationDelay: 900000ms
+2021-06-22 11:02:56,414 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: ContainerTokenKeyRollingInterval: 86400000ms and ContainerTokenKeyActivationDelay: 900000ms
+2021-06-22 11:02:56,421 INFO org.apache.hadoop.yarn.server.resourcemanager.security.AMRMTokenSecretManager: AMRMTokenKeyRollingInterval: 86400000ms and AMRMTokenKeyActivationDelay: 900000 ms
+2021-06-22 11:02:56,464 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreEventType for class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore$ForwardingEventHandler
+2021-06-22 11:02:56,465 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.NodesListManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.NodesListManager
+2021-06-22 11:02:56,465 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Using Scheduler: org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+2021-06-22 11:02:56,486 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.scheduler.event.SchedulerEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$SchedulerEventDispatcher
+2021-06-22 11:02:56,487 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationEventDispatcher
+2021-06-22 11:02:56,488 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$ApplicationAttemptEventDispatcher
+2021-06-22 11:02:56,489 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeEventType for class org.apache.hadoop.yarn.server.resourcemanager.ResourceManager$NodeEventDispatcher
+2021-06-22 11:02:56,562 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2021-06-22 11:02:56,627 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2021-06-22 11:02:56,627 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system started
+2021-06-22 11:02:56,644 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.RMAppManagerEventType for class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager
+2021-06-22 11:02:56,654 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.AMLauncherEventType for class org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher
+2021-06-22 11:02:56,658 INFO org.apache.hadoop.yarn.server.resourcemanager.RMNMInfo: Registered RMNMInfo MBean
+2021-06-22 11:02:56,662 INFO org.apache.hadoop.yarn.security.YarnAuthorizationProvider: org.apache.hadoop.yarn.security.ConfiguredYarnAuthorizer is instiantiated.
+2021-06-22 11:02:56,663 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2021-06-22 11:02:56,667 INFO org.apache.hadoop.conf.Configuration: found resource capacity-scheduler.xml at file:/opt/hadoop-2.7.2/etc/hadoop/capacity-scheduler.xml
+2021-06-22 11:02:56,713 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root is undefined
+2021-06-22 11:02:56,713 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root is undefined
+2021-06-22 11:02:56,719 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: root, capacity=1.0, asboluteCapacity=1.0, maxCapacity=1.0, asboluteMaxCapacity=1.0, state=RUNNING, acls=SUBMIT_APP:*ADMINISTER_QUEUE:*, labels=*,
+, reservationsContinueLooking=true
+2021-06-22 11:02:56,719 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue: Initialized parent-queue root name=root, fullname=root
+2021-06-22 11:02:56,727 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc mb per queue for root.default is undefined
+2021-06-22 11:02:56,727 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacitySchedulerConfiguration: max alloc vcore per queue for root.default is undefined
+2021-06-22 11:02:56,728 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue: Initializing default
+capacity = 1.0 [= (float) configuredCapacity / 100 ]
+asboluteCapacity = 1.0 [= parentAbsoluteCapacity * capacity ]
+maxCapacity = 1.0 [= configuredMaxCapacity ]
+absoluteMaxCapacity = 1.0 [= 1.0 maximumCapacity undefined, (parentAbsoluteMaxCapacity * maximumCapacity) / 100 otherwise ]
+userLimit = 100 [= configuredUserLimit ]
+userLimitFactor = 1.0 [= configuredUserLimitFactor ]
+maxApplications = 10000 [= configuredMaximumSystemApplicationsPerQueue or (int)(configuredMaximumSystemApplications * absoluteCapacity)]
+maxApplicationsPerUser = 10000 [= (int)(maxApplications * (userLimit / 100.0f) * userLimitFactor) ]
+usedCapacity = 0.0 [= usedResourcesMemory / (clusterResourceMemory * absoluteCapacity)]
+absoluteUsedCapacity = 0.0 [= usedResourcesMemory / clusterResourceMemory]
+maxAMResourcePerQueuePercent = 0.1 [= configuredMaximumAMResourcePercent ]
+minimumAllocationFactor = 0.875 [= (float)(maximumAllocationMemory - minimumAllocationMemory) / maximumAllocationMemory ]
+maximumAllocation = <memory:8192, vCores:32> [= configuredMaxAllocation ]
+numContainers = 0 [= currentNumContainers ]
+state = RUNNING [= configuredState ]
+acls = SUBMIT_APP:*ADMINISTER_QUEUE:* [= configuredAcls ]
+nodeLocalityDelay = 40
+labels=*,
+nodeLocalityDelay = 40
+reservationsContinueLooking = true
+preemptionDisabled = true
+
+2021-06-22 11:02:56,728 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: default: capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>, usedCapacity=0.0, absoluteUsedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 11:02:56,729 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue: root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 11:02:56,730 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized root queue root: numChildQueue= 1, capacity=1.0, absoluteCapacity=1.0, usedResources=<memory:0, vCores:0>usedCapacity=0.0, numApps=0, numContainers=0
+2021-06-22 11:02:56,730 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized queue mappings, override: false
+2021-06-22 11:02:56,730 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Initialized CapacityScheduler with calculator=class org.apache.hadoop.yarn.util.resource.DefaultResourceCalculator, minimumAllocation=<<memory:1024, vCores:1>>, maximumAllocation=<<memory:8192, vCores:32>>, asynchronousScheduling=false, asyncScheduleInterval=5ms
+2021-06-22 11:02:56,749 INFO org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher: YARN system metrics publishing service is not enabled
+2021-06-22 11:02:56,750 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to active state
+2021-06-22 11:02:56,767 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Updating AMRMToken
+2021-06-22 11:02:56,767 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMContainerTokenSecretManager: Rolling master-key for container-tokens
+2021-06-22 11:02:56,767 INFO org.apache.hadoop.yarn.server.resourcemanager.security.NMTokenSecretManagerInRM: Rolling master-key for nm-tokens
+2021-06-22 11:02:56,767 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-22 11:02:56,768 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 1
+2021-06-22 11:02:56,768 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2021-06-22 11:02:56,769 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2021-06-22 11:02:56,769 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-22 11:02:56,769 INFO org.apache.hadoop.yarn.server.resourcemanager.security.RMDelegationTokenSecretManager: storing master key with keyID 2
+2021-06-22 11:02:56,770 INFO org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore: Storing RMDTMasterKey.
+2021-06-22 11:02:56,772 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.yarn.nodelabels.event.NodeLabelsStoreEventType for class org.apache.hadoop.yarn.nodelabels.CommonNodeLabelsManager$ForwardingEventHandler
+2021-06-22 11:02:56,804 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-22 11:02:56,817 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8031
+2021-06-22 11:02:56,834 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceTrackerPB to the server
+2021-06-22 11:02:56,834 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-22 11:02:56,834 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8031: starting
+2021-06-22 11:02:56,940 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-22 11:02:56,946 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8030
+2021-06-22 11:02:56,953 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationMasterProtocolPB to the server
+2021-06-22 11:02:56,954 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-22 11:02:56,954 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8030: starting
+2021-06-22 11:02:57,049 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-22 11:02:57,050 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8032
+2021-06-22 11:02:57,052 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.api.ApplicationClientProtocolPB to the server
+2021-06-22 11:02:57,052 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-22 11:02:57,052 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8032: starting
+2021-06-22 11:02:57,062 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to active state
+2021-06-22 11:02:57,157 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2021-06-22 11:02:57,165 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2021-06-22 11:02:57,171 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.resourcemanager is not defined
+2021-06-22 11:02:57,179 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2021-06-22 11:02:57,184 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context cluster
+2021-06-22 11:02:57,184 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context static
+2021-06-22 11:02:57,184 INFO org.apache.hadoop.http.HttpServer2: Added filter RMAuthenticationFilter (class=org.apache.hadoop.yarn.server.security.http.RMAuthenticationFilter) to context logs
+2021-06-22 11:02:57,184 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context cluster
+2021-06-22 11:02:57,185 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2021-06-22 11:02:57,185 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2021-06-22 11:02:57,188 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /cluster/*
+2021-06-22 11:02:57,188 INFO org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2021-06-22 11:02:57,737 INFO org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2021-06-22 11:02:57,739 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 8088
+2021-06-22 11:02:57,739 INFO org.mortbay.log: jetty-6.1.26
+2021-06-22 11:02:57,771 INFO org.mortbay.log: Extract jar:file:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar!/webapps/cluster to /tmp/Jetty_0_0_0_0_8088_cluster____u0rgz3/webapp
+2021-06-22 11:02:57,966 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-22 11:02:57,966 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2021-06-22 11:02:57,967 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2021-06-22 11:02:59,596 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2021-06-22 11:02:59,596 INFO org.apache.hadoop.yarn.webapp.WebApps: Web app cluster started at 8088
+2021-06-22 11:02:59,682 INFO org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2021-06-22 11:02:59,684 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 8033
+2021-06-22 11:02:59,687 INFO org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.yarn.server.api.ResourceManagerAdministrationProtocolPB to the server
+2021-06-22 11:02:59,688 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2021-06-22 11:02:59,689 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 8033: starting
+2021-06-22 11:03:02,618 INFO org.apache.hadoop.yarn.util.RackResolver: Resolved DESKTOP-TSQQRSN to /default-rack
+2021-06-22 11:03:02,621 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceTrackerService: NodeManager from node DESKTOP-TSQQRSN(cmPort: 49207 httpPort: 8042) registered with capability: <memory:8192, vCores:8>, assigned nodeId DESKTOP-TSQQRSN:49207
+2021-06-22 11:03:02,626 INFO org.apache.hadoop.yarn.server.resourcemanager.rmnode.RMNodeImpl: DESKTOP-TSQQRSN:49207 Node Transitioned from NEW to RUNNING
+2021-06-22 11:03:02,630 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Added node DESKTOP-TSQQRSN:49207 clusterResource: <memory:8192, vCores:8>
+2021-06-22 11:12:56,674 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.AbstractYarnScheduler: Release request cache is cleaned up
+2021-06-22 21:22:37,488 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM
+2021-06-22 21:22:37,599 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2021-06-22 21:22:37,637 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8088
+2021-06-22 21:22:37,752 INFO org.apache.hadoop.ipc.Server: Stopping server on 8032
+2021-06-22 21:22:37,755 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8032
+2021-06-22 21:22:37,756 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-22 21:22:37,760 INFO org.apache.hadoop.ipc.Server: Stopping server on 8033
+2021-06-22 21:22:37,763 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8033
+2021-06-22 21:22:37,763 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-22 21:22:37,765 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioning to standby state
+2021-06-22 21:22:37,767 WARN org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher: org.apache.hadoop.yarn.server.resourcemanager.amlauncher.ApplicationMasterLauncher$LauncherThread interrupted. Returning.
+2021-06-22 21:22:37,767 INFO org.apache.hadoop.ipc.Server: Stopping server on 8030
+2021-06-22 21:22:37,770 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8030
+2021-06-22 21:22:37,770 INFO org.apache.hadoop.ipc.Server: Stopping server on 8031
+2021-06-22 21:22:37,770 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-22 21:22:37,775 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2021-06-22 21:22:37,775 INFO org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 8031
+2021-06-22 21:22:37,776 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: NMLivelinessMonitor thread interrupted
+2021-06-22 21:22:37,776 ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Returning, interrupted : java.lang.InterruptedException
+2021-06-22 21:22:37,779 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2021-06-22 21:22:37,784 ERROR org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: ExpiredTokenRemover received java.lang.InterruptedException: sleep interrupted
+2021-06-22 21:22:37,784 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: org.apache.hadoop.yarn.server.resourcemanager.rmcontainer.ContainerAllocationExpirer thread interrupted
+2021-06-22 21:22:37,784 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2021-06-22 21:22:37,784 INFO org.apache.hadoop.yarn.util.AbstractLivelinessMonitor: AMLivelinessMonitor thread interrupted
+2021-06-22 21:22:37,786 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping ResourceManager metrics system...
+2021-06-22 21:22:37,795 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system stopped.
+2021-06-22 21:22:37,795 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ResourceManager metrics system shutdown complete.
+2021-06-22 21:22:37,795 INFO org.apache.hadoop.yarn.event.AsyncDispatcher: AsyncDispatcher is draining to stop, igonring any new events.
+2021-06-22 21:22:37,796 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: Transitioned to standby state
+2021-06-22 21:22:37,797 INFO org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down ResourceManager at DESKTOP-TSQQRSN/10.191.53.85
+************************************************************/
