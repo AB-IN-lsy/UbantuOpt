@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class WordcountMapped extends Mapper<LongWritable, Text, Text, IntWritable> {
     /**
-     * 前两个是输入的KV，后两个是输出的KV
+     * 前两个是输入的KV，一个是偏移量，一个是行，后两个是输出的KV
      * 父类四个方法，setup，run，cleanup，还有要重写的map
      */
 
@@ -19,6 +19,8 @@ public class WordcountMapped extends Mapper<LongWritable, Text, Text, IntWritabl
         Text k = new Text();
         IntWritable v = new IntWritable(1);
         String line = value.toString();
+        line.replace(",", " ");
+        line.replace(";", " ");
         String[] words = line.split(" ");
         for(String word : words){
             k.set(word);
