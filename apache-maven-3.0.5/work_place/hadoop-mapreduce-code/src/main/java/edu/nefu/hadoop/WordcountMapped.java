@@ -19,8 +19,8 @@ public class WordcountMapped extends Mapper<LongWritable, Text, Text, IntWritabl
         Text k = new Text();
         IntWritable v = new IntWritable(1);
         String line = value.toString();
-        line.replace(",", " ");
-        line.replace(";", " ");
+        line = line.replace(",", " ");
+        line = line.replace(";", " ");
         String[] words = line.split(" ");
         for(String word : words){
             k.set(word);
