@@ -19,14 +19,14 @@ public class WordcountDriver {
         // 2 设置jar包路径
         job.setJarByClass(WordcountDriver.class);
         // 3 将Mapper和Reducer与Driver进行关联
-        job.setMapperClass(WordcountMapped.class);
+        job.setMapperClass(WordcountMapper.class);
         job.setReducerClass(WordcountReducer.class);
         // 4 设置Mapper输出类型
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(IntWritable.class);
         // 5 设置最终的输出类型
         job.setOutputKeyClass(Text.class);
-        job.setMapOutputKeyClass(Text.class);
+        job.setOutputValueClass(IntWritable.class);
         // 6 设置输入路径和输出路径
         FileInputFormat.setInputPaths(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));

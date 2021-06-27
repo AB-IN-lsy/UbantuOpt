@@ -21,8 +21,17 @@
         <value>hdfs://DESKTOP-TSQQRSN:9000</value>
     </property>
 
+<property> 
+ <name>fs.trash.interval</name> 
+ <value>1</value> 
+</property>
 
 <property> 
+ <name>hadoop.http.staticuser.user</name> 
+ <value>root</value> 
+</property>
+
+<property>
 	<name>hadoop.tmp.dir</name>
 	<value>/opt/hadoop-2.7.2/data/tmp</value> 
 </property>

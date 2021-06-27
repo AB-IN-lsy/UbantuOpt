@@ -1,3 +1,6 @@
-D:\Ubuntu_2004.2020.424.0_x64\rootfs\opt\apache-maven-3.0.5\work_place\hadoop-mapreduce-code\src\main\java\edu\nefu\hadoop\WordcountMapped.java
+D:\Ubuntu_2004.2020.424.0_x64\rootfs\opt\apache-maven-3.0.5\work_place\hadoop-mapreduce-code\src\main\java\edu\nefu\hadoop\WordcountMapper.java
+D:\Ubuntu_2004.2020.424.0_x64\rootfs\opt\apache-maven-3.0.5\work_place\hadoop-mapreduce-code\src\main\java\edu\nefu\hadoop\SortMapper.java
 D:\Ubuntu_2004.2020.424.0_x64\rootfs\opt\apache-maven-3.0.5\work_place\hadoop-mapreduce-code\src\main\java\edu\nefu\hadoop\WordcountDriver.java
 D:\Ubuntu_2004.2020.424.0_x64\rootfs\opt\apache-maven-3.0.5\work_place\hadoop-mapreduce-code\src\main\java\edu\nefu\hadoop\WordcountReducer.java
+D:\Ubuntu_2004.2020.424.0_x64\rootfs\opt\apache-maven-3.0.5\work_place\hadoop-mapreduce-code\src\main\java\edu\nefu\hadoop\SortDriver.java
+D:\Ubuntu_2004.2020.424.0_x64\rootfs\opt\apache-maven-3.0.5\work_place\hadoop-mapreduce-code\src\main\java\edu\nefu\hadoop\SortReducer.java

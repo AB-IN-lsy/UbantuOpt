@@ -1,3 +1,6 @@
 edu\nefu\hadoop\WordcountDriver.class
-edu\nefu\hadoop\WordcountMapped.class
+edu\nefu\hadoop\SortReducer.class
+edu\nefu\hadoop\SortMapper.class
+edu\nefu\hadoop\SortDriver.class
 edu\nefu\hadoop\WordcountReducer.class
+edu\nefu\hadoop\WordcountMapper.class
